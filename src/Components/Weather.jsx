@@ -2,6 +2,7 @@
 import axios from 'axios';
 
 import { useState, useEffect } from 'react';
+import geo from '../../public/icon/geo.png';
 
 const Weather = () => {
     
@@ -40,7 +41,7 @@ const Weather = () => {
              { /*------------------------------------- START CODE WEATHER-------------------------------------*/}
             <div className='weather'>
             <h1>WEATHER  APP</h1>
-            <h2><img className="geo" src="./public/icon/geo.png"/>
+            <h2><img className="geo" src={geo} />
              {weather.name}, {weather.sys?.country}</h2>
             <img src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
             <h1>{kelvin ? celsius : fahrenheit} {kelvin ? "°C" : "°F"} </h1>
@@ -51,7 +52,7 @@ const Weather = () => {
             <h3><img className="pressure" src="/public/icon/pressure.png" alt="" /> Pressure: {weather.main?.pressure} mbar</h3>
             <button className="button" onClick={changeTemperature}>
                 {kelvin ? "Degrees Celsius" : "Degrees Fahrenheit"}
-            </button>
+            </button> 
             </div>
            { /*------------------------------------- FINISH CODE WEATHER-------------------------------------*/}
         </div>
