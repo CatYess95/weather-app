@@ -3,6 +3,7 @@
   text-align: center;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: auto;
 }
 
 body{
@@ -15,21 +16,20 @@ body{
  }
 
  h3{
-  padding-top: 12px;
-  font-size: 25px;
+  padding-top: 2px;
+  font-size: 20px;
   text-align: justify;
   margin-left: 2rem;
  }
 
  h1{
-  padding: 15px;
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(6, 6, 141);
  }
 
 img{
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
 }
 
 .geo,
