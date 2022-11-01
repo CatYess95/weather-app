@@ -3,6 +3,10 @@ import axios from 'axios';
 
 import { useState, useEffect } from 'react';
 import geo from '../../public/icon/geo.png';
+import wind from '../../public/icon/wind.png';
+import cloudy from '../../public/icon/cloudy,png';
+import humidity from '../../public/icon/humidity.png';
+import pressure from '../../public/icon/pressure.png';
 
 const Weather = () => {
     
@@ -46,10 +50,10 @@ const Weather = () => {
             <img src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
             <h1>{kelvin ? celsius : fahrenheit} {kelvin ? "°C" : "°F"} </h1>
             <h2>"{weather.weather?.[0].description}"</h2>
-            <h3><img className="wind" src='/public/icon/wind.png'/> Wind speed: {weather.wind?.speed} m/s</h3>
-            <h3><img className="cloudy" src="/public/icon/cloudy.png" alt="" />  Clouds: {weather.clouds?.all}%</h3>
-            <h3><img className="humidity" src="/public/icon/humidity.png" alt="" />  Humidity: {weather.main?.humidity}%</h3>
-            <h3><img className="pressure" src="/public/icon/pressure.png" alt="" /> Pressure: {weather.main?.pressure} mbar</h3>
+            <h3><img className="wind" src={wind}/> Wind speed: {weather.wind?.speed} m/s</h3>
+            <h3><img className="cloudy" src={cloudy} alt="" />  Clouds: {weather.clouds?.all}%</h3>
+            <h3><img className="humidity" src={humidity} alt="" />  Humidity: {weather.main?.humidity}%</h3>
+            <h3><img className="pressure" src={pressure} alt="" /> Pressure: {weather.main?.pressure} mbar</h3>
             <button className="button" onClick={changeTemperature}>
                 {kelvin ? "Degrees Celsius" : "Degrees Fahrenheit"}
             </button> 
