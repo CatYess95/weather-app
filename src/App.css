@@ -1,0 +1,60 @@
+*{
+  font-family: 'Secular One', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("./assets/image22.jpg");
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+ }
+
+ h3{
+  padding-top: 12px;
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 2rem;
+ }
+
+ h1{
+  padding: 15px;
+  font-size: 50px;
+  color: rgb(6, 6, 141);
+ }
+
+img{
+  width: 250px;
+  height: 250px;
+}
+
+.geo,
+.wind,
+.cloudy,
+.humidity,
+.pressure{
+  width: 30px;
+  height: 30px;
+}
+
+.weather{
+  max-width: 600px;
+  border-radius: 10%;
+  padding: 40px;
+  box-shadow: rgba(8, 2, 69, 0.56) 0px 22px 70px 4px;
+}
+
+.button{
+  cursor: pointer;
+  background-color:rgb(17, 13, 13);
+  font-size: 15px;
+  color:white;
+  padding: 0.5rem;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  margin-top: 1rem;
+}
