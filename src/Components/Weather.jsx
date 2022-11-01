@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import geo from '../../public/icon/geo.png';
 import wind from '../../public/icon/wind.png';
-import cloudy from '../../public/icon/cloudy,png';
+import cloudy from '../../public/icon/cloudy.png';
 import humidity from '../../public/icon/humidity.png';
 import pressure from '../../public/icon/pressure.png';
 
